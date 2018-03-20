@@ -1,6 +1,7 @@
-import { browser } from "protractor";
-import { SearchPageObject } from "../pages/searchPage";
-const { Given } = require("cucumber");
+import {browser} from "protractor";
+import {SearchPageObject} from "../pages/searchPage";
+
+const {Given} = require("cucumber");
 const chai = require("chai").use(require("chai-as-promised"));
 const expect = chai.expect;
 

@@ -1,5 +1,6 @@
 node_modules/
 TypeScript/
 reports/
+.idea/
 *.js
 .vscode
