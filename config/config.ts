@@ -1,6 +1,8 @@
 import * as path from "path";
-import { browser, Config } from "protractor";
-import { Reporter } from "../support/reporter";
+
+import {browser, Config} from "protractor";
+import {Reporter} from "../support/reporter";
+
 const jsonReports = process.cwd() + "/reports/json";
 
 export const config: Config = {
@@ -25,6 +27,7 @@ export const config: Config = {
     onPrepare: () => {
         browser.ignoreSynchronization = true;
         browser.manage().window().maximize();
+
         Reporter.createDirectory(jsonReports);
     },
 
